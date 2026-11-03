@@ -4,8 +4,7 @@ Welcome to the code examples, documentation, and resource hub for our coursework
 
 ## 🔗 Useful Links & Downloads
 - [Data Download (`CellAtlasDemo.zip`)](https://drive.google.com/file/d/1VyZy4QkksD8jkhTH5Fk-nLAVuTaXg-x3/view?usp=sharing) *(Please upload this archive to your Google Drive My Drive root)*
-- [Official Course Website](https://example.com)
-- [Python Official Documentation](https://www.python.org)
+  
 
 ## 💻 Jupyter Notebook (.ipynb) Content Overview
 The main demonstration notebook (`CellAtlasDemo.ipynb`) guides users through an end-to-end 3D bioimage informatics workflow:
