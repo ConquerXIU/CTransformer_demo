@@ -3,7 +3,7 @@
 Welcome to the code examples, documentation, and resource hub for our coursework and demonstrations.
 
 ## 🔗 Useful Links & Downloads
-- [Data Download (`CellAtlasDemo.zip`)](https://drive.google.com/file/d/1VyZy4QkksD8jkhTH5Fk-nLAVuTaXg-x3/view?usp=sharing) *(Please upload this archive to your Google Drive My Drive root)*
+- [Data Download (`CellAtlasDemo.zip`)](https://drive.google.com/file/d/1moNjHWOQANsEs6cbtywAS9mDxAxusjNh/view?usp=drive_link) *(Please upload this archive to your Google Drive My Drive root)*
   
 
 ## 💻 Jupyter Notebook (.ipynb) Content Overview
