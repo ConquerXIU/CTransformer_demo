@@ -2,9 +2,14 @@
 
 Welcome to the code examples, documentation, and resource hub for our coursework and demonstrations.
 
+## 🎬 Video Tutorial & Walkthrough
+Watch our step-by-step demonstration video on how to set up and run the `CellAtlasDemo.ipynb` pipeline:
+
+https://youtu.be/kBr56B3mGE0
+
 ## 🔗 Useful Links & Downloads
-- [Data Download (`CellAtlasDemo.zip`)](https://drive.google.com/file/d/1moNjHWOQANsEs6cbtywAS9mDxAxusjNh/view?usp=drive_link) *(Please upload this archive to your Google Drive My Drive root)*
-  
+- **Video Walkthrough**: [Watch on YouTube](https://youtu.be/kBr56B3mGE0)
+- **Demo Dataset**: [Data Download (`CellAtlasDemo.zip`)](https://drive.google.com/file/d/1moNjHWOQANsEs6cbtywAS9mDxAxusjNh/view?usp=drive_link) *(Please upload this archive to your Google Drive My Drive root)*
 
 ## 💻 Jupyter Notebook (.ipynb) Content Overview
 The main demonstration notebook (`CellAtlasDemo.ipynb`) guides users through an end-to-end 3D bioimage informatics workflow:
@@ -18,5 +23,6 @@ The main demonstration notebook (`CellAtlasDemo.ipynb`) guides users through an 
   5. **Volume Inspection**: Utilizes Matplotlib and Nibabel to visualize middle horizontal (XY), sagittal (YZ), and coronal (XZ) slices of the processed 3D embryonic volumes.
 
 ## 🚀 How to Run
-1. Upload `CellAtlasDemo.zip` to your Google Drive `My Drive`.
-2. Open the notebook in Google Colab, select a **T4 GPU** runtime, and run the cells in order.
+1. **Watch the Tutorial (Optional)**: Check the [Video Walkthrough](https://youtu.be/kBr56B3mGE0) for a complete visual guide.
+2. **Prepare Data**: Upload `CellAtlasDemo.zip` to your Google Drive `My Drive`.
+3. **Execute Notebook**: Open `CellAtlasDemo.ipynb` in Google Colab, select a **T4 GPU** runtime, and run the cells in order.
