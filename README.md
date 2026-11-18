@@ -10,7 +10,7 @@ https://youtu.be/kBr56B3mGE0
 ## 🔗 Useful Links & Downloads
 - **Video Walkthrough**: [Watch on YouTube](https://youtu.be/kBr56B3mGE0)
 - **Demo Dataset**: [Data Download (`CellAtlasDemo.zip`)](https://drive.google.com/file/d/1moNjHWOQANsEs6cbtywAS9mDxAxusjNh/view?usp=drive_link) *(Please upload this archive to your Google Drive My Drive root)*
--- **Google Colab**: [Run the pipeline here](https://colab.research.google.com/drive/1USPG_FVm7-yMPB6kyvHvzxTv-pFucaxV?usp=sharing)
+- **Google Colab**: [Run the pipeline here](https://colab.research.google.com/drive/1USPG_FVm7-yMPB6kyvHvzxTv-pFucaxV?usp=sharing)
 ## 💻 Jupyter Notebook (.ipynb) Content Overview
 The main demonstration notebook (`CellAtlasDemo.ipynb`) guides users through an end-to-end 3D bioimage informatics workflow:
 
