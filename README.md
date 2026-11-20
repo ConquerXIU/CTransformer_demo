@@ -17,10 +17,16 @@ The main demonstration notebook (`CellAtlasDemo.ipynb`) guides users through an 
 - **Pipeline Workflow**: TIFF slices $\rightarrow$ 3D volumes (`.nii.gz format`) $\rightarrow$ PKL format $\rightarrow$ Membrane prediction $\rightarrow$ Instance cell segmentation $\rightarrow$ **m2nGAN** $\rightarrow$ Morphology $\rightarrow$ GUI.
 - **Key Sections in the Notebook**:
   1. **Environment Setup & Drive Mounting**: Mounts Google Drive, extracts `CellAtlasDemo.zip`, and sets up an isolated Python 3.12 environment with pinned dependencies (`PyTorch`, `NumPy`, etc.) optimized for a **T4 GPU** runtime.
-  2. **Lineage Dictionary Generation**: Generates `name_dictionary.csv` and `number_dictionary.csv` for embryonic cell lineage tracking files.
-  3. **3D Volume Composition**: Stacks 2D raw membrane and nucleus TIFF slices into 3D NIfTI (`.nii.gz`) volumes with calibrated voxel resolutions.
-  4. **Nuclear Segmentation (SegNuc)**: Constructs nuclear location segmentations based on CD lineage files (`CDFiles/*.csv`).
-  5. **Volume Inspection**: Utilizes Matplotlib and Nibabel to visualize middle horizontal (XY), sagittal (YZ), and coronal (XZ) slices of the processed 3D embryonic volumes.
+  2. **Lineage Dictionary Generation**: Checks the expected TIFF slices and time points, then generates numeric cell-label mappings from the lineage CSV files for downstream segmentation and visualization.
+  3. **2D-to-3D Preprocessing**: Stacks 2D raw membrane and nucleus TIFF slices into 3D NIfTI (`.nii.gz`) volumes with calibrated voxel resolutions.
+  4. **Pickle Conversion for Inference**: Converts the prepared NIfTI volumes into pickle files required by the model’s data-loading pipeline.
+  5. **Membrane Prediction**: Loads a pretrained CTransformer checkpoint and predicts binary membrane volumes for the selected embryos.
+  6. **Cell Instance Reconstruction**: Converts predicted membrane boundaries into labeled 3D cell instances, then combines regions associated with dividing cells to produce the volumes used by later analysis.
+  7. **Pseudo-Nucleus Generation**: Runs the m2nGAN-based pseudo-nucleus stage and previews its outputs.
+  8. **Morphological Feature Analysis**: Calculates per-cell volume, surface area, and cell-cell contact surface from the reconstructed instances. It then combines these measurements across time points and maps CD lineage coordinates into nucleus-location and morphology tables. 
+  9. **Cell-Wise Visualization Data**: Packages labeled cell volumes, membrane images, statistics, and lineage-derived metadata into a GUI-ready directory, including per-time-point cell lists, lifespans, neighbors, divisions, and lost-cell records.
+  10. **Tissue-Wise Visualization Data**: Maps cell-instance labels to cell-fate labels using CellFate.xls, then prepares a second GUI-ready dataset and its supporting metadata.
+  11. ** Quality Checks and Drive Export**: Runs final checks and copies both GUI datasets, morphology statistics, reports, and generated-nuclei outputs to CellAtlasDemoResults in Google Drive for inspection in ITK-CVE-SNAP.
 
 ## 🚀 How to Run
 1. **Watch the Tutorial (Optional)**: Check the [Video Walkthrough](https://youtu.be/kBr56B3mGE0) for a complete visual guide.
