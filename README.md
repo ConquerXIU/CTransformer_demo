@@ -26,7 +26,7 @@ The main demonstration notebook (`CellAtlasDemo.ipynb`) guides users through an 
   8. **Morphological Feature Analysis**: Calculates per-cell volume, surface area, and cell-cell contact surface from the reconstructed instances. It then combines these measurements across time points and maps CD lineage coordinates into nucleus-location and morphology tables. 
   9. **Cell-Wise Visualization Data**: Packages labeled cell volumes, membrane images, statistics, and lineage-derived metadata into a GUI-ready directory, including per-time-point cell lists, lifespans, neighbors, divisions, and lost-cell records.
   10. **Tissue-Wise Visualization Data**: Maps cell-instance labels to cell-fate labels using CellFate.xls, then prepares a second GUI-ready dataset and its supporting metadata.
-  11. ** Quality Checks and Drive Export**: Runs final checks and copies both GUI datasets, morphology statistics, reports, and generated-nuclei outputs to CellAtlasDemoResults in Google Drive for inspection in ITK-CVE-SNAP.
+  11. **Quality Checks and Drive Export**: Runs final checks and copies both GUI datasets, morphology statistics, reports, and generated-nuclei outputs to CellAtlasDemoResults in Google Drive for inspection in ITK-CVE-SNAP.
 
 ## 🚀 How to Run
 1. **Watch the Tutorial (Optional)**: Check the [Video Walkthrough](https://youtu.be/kBr56B3mGE0) for a complete visual guide.
